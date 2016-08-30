@@ -53,7 +53,7 @@ age.gender.adjusted <- function(y) {
 
 ## factor it --------------------------------------#
 factor.it <- function(y) {
-  y <- as.factor(y)
+  factorise <- as.factor(y)
   return(factor.it )
 }
   
