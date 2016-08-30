@@ -46,7 +46,7 @@ categorise.symptom.count <- function(x) {
 ## age.gender.adjusted analysis --------------------------------------#
 
 age.gender.adjusted <- function(y) {
-  age.gender.adjustify <- multinom(NameOfAD ~ gender_new + agegroups + y, ad_users_grouped)
+  age.gender.adjustify <- multinom(NameOfAD ~ gender_new + agegroups + y, ad_users_grouped_test)
   return(age.gender.adjustify)
 }
 
