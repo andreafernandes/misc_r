@@ -43,11 +43,18 @@ categorise.symptom.count <- function(x) {
 }
 
 
-## age.gender.adjusted analysis
+## age.gender.adjusted analysis --------------------------------------#
 
 age.gender.adjusted <- function(y) {
   y.age.gender <- multinom(NameOfAD ~ gender_new + agegroups + y, ad_users_grouped)
   return(age.gender.adjusted)
+}
+
+
+## factor it --------------------------------------#
+factor.it <- function(y) {
+  ad_users_grouped$y <- as.factor(ad_users_grouped$y)
+  return(factor.it )
 }
   
 
