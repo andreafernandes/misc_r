@@ -41,6 +41,14 @@ categorise.symptom.count <- function(x) {
                                ifelse(x > 50, "3.More than 50 times", NA))))
   return(categorise)
 }
+
+
+## age.gender.adjusted analysis
+
+age.gender.adjusted <- function(y) {
+  y.age.gender <- multinom(NameOfAD ~ gender_new + agegroups + y, ad_users_grouped)
+  return(age.gender.adjusted)
+}
   
 
 
