@@ -20,17 +20,11 @@ binarise.it <- function(y) {
 ## categorise.honos --------------------------------------#
 
 categorise.honos <- function(x) {
-  categorise <- (ifelse(as.numeric(x) == 1,"1.No symptoms", 
-                        ifelse(as.numeric(x) == 2 | 
-                                 as.numeric(x) == 3, "2.Mild to moderate symptoms",
-                               ifelse(as.numeric(x) == 4 | 
-                                        as.numeric(x) == 5, "3.Moderate to severe symptoms",
-                                      ifelse(as.numeric(as.numeric(x)) == 6, NA,
-                                             ifelse(is.na(as.numeric(x)) == TRUE, NA, NA
-                                             ))))))
-  return(categorise)
+categorise <-  (ifelse(x == 0, "No symptoms",
+                ifelse(x == 1 | x == 2, "Mild",
+                ifelse(x == 3 | x == 4, "Mod to Severe", NA))))
+return(categorise)
 }
-
 
 
 ## categorise.symptom.count --------------------------------------#
