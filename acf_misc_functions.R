@@ -50,6 +50,15 @@ factor.it <- function(x) {
   factorise <- as.factor(x)
   return(factorise)
 }
+
+
+
+## binarising risk assessment --------------------------------------#
+binarise.it.RA <- function(y) {
+  binarise.RA <- (ifelse(y == "Yes", 1, 
+                  ifelse(y == "No", 0, NA)))
+  return(binarise.RA)
+}
   
 
 
