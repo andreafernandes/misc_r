@@ -64,7 +64,9 @@ binarise.it.RA <- function(y) {
 
 ## date format --------------------------------------#
 dateformatAF <- function(y) {
-  dateformat <- as.Date(y, origin="1970-01-01")
+  dateformat <- mutate(y = as.Date(y, format = "%d/%m/%Y", origin="1970-01-01"))
+  
+  mutate(Two_wk_SSRI_Sert = as.Date(Two_wk_SSRI_Sert, format = "%d/%m/%Y", origin="1970-01-01"))
   return(dateformat)
 }
   
