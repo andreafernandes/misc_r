@@ -62,18 +62,11 @@ binarise.it.RA <- function(y) {
   
 
 
-## as date --------------------------------------#
-dateformatAF <- function(var) {
-  dateformat <- as.Date(var)
-  return(dateformat)
-}
-
-
 
 ## date format --------------------------------------#
-dateformatAFII <- function(var) {
-  dateformatII <- as.Date(var, format == "%d/%m/%Y", origin == "1970-01-01")
-  return(dateformatII)
+dateformatAF <- function(var) {
+  dateformat <- as.Date(var, format = "%d/%m/%Y", origin = "1970-01-01")
+  return(dateformat)
 }
   
 
