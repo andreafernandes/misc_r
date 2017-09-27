@@ -72,7 +72,7 @@ dateformatAF <- function(var) {
 
 ## date format --------------------------------------#
 dateformatAFII <- function(var) {
-  dateformatII <- as.Date(var, format = "%d/%m/%Y", origin ="1970-01-01")
+  dateformatII <- as.Date(var, format == "%d/%m/%Y", origin == "1970-01-01")
   return(dateformatII)
 }
   
