@@ -63,8 +63,8 @@ binarise.it.RA <- function(y) {
 
 
 ## date format --------------------------------------#
-dateformatAF <- function(y) {
-  dateformat <- dplyr::mutate(y = as.Date(y, format = "%d/%m/%Y", origin="1970-01-01"))
+dateformatAF <- function(var) {
+  dateformat <- lubridate::as.Date(var, format = "%d/%m/%Y", origin="1970-01-01"))
   return(dateformat)
 }
   
